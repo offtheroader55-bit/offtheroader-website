@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #020617;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 60px 20px;
+    background: linear-gradient(to right,#1e3c72,#2a5298);
+    animation: fadeDown 1s ease;
+}
+
+@keyframes fadeDown {
+    from {opacity:0; transform: translateY(-40px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid white;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+
+/* IMAGE HOVER */
+.profile-img:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 0 20px #38bdf8;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeUp 1.2s ease;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+}
+
+@keyframes fadeUp {
+    from {opacity:0; transform: translateY(40px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    width: 260px;
+    transition: 0.4s;
+}
+
+/* CARD HOVER */
+.card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 0 20px rgba(56,189,248,0.5);
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h2>@Off_the_Roader-55</h2>
+<div>
+<a href="Homepage.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<!-- HEADER -->
+<div class="header">
+<h1>About Me 🎮</h1>
+<p>Get to know more about my journey and passion</p>
+
+<!-- ⚠️ FIXED IMAGE PATH -->
+<img src="C:\Users\SM\Pictures\Screenshots\channels4_profile.jpg" alt="Channel Logo" class="profile-img">
+</div>
+
+<!-- INTRO -->
+<section>
+<div class="container">
+<h2>Who Am I?</h2>
+<p>
+I am a passionate gaming creator who enjoys exploring new and exciting games.
+I focus on creating engaging gameplay content and sharing unique experiences.
+<br><br>
+<strong>Trying different types of games is my hobby.</strong>
+</p>
+</div>
+</section>
+
+<!-- SKILLS -->
+<section>
+<h2>What I Do</h2>
+<div class="cards">
+
+<div class="card">
+<h3>🎮 Gaming</h3>
+<p>Exploring genres like open-world, racing, and action games.</p>
+</div>
+
+<div class="card">
+<h3>🎥 Content Creation</h3>
+<p>Uploading gameplay videos and entertaining content regularly.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Growth</h3>
+<p>Improving skills and building a strong gaming community.</p>
+</div>
+
+</div>
+</section>
+
+<!-- GOALS -->
+<section>
+<div class="container">
+<h2>My Goals</h2>
+<p>
+To grow my YouTube channel "@Off_the_Roader-55", reach more people,
+and deliver high-quality gaming content.
+</p>
+</div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 | @Off_the_Roader-55
+</footer>
+
+</body>
+</html>

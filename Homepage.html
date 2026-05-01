@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+nav h2 {
+    margin: 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    animation: fadeDown 1s ease;
+}
+
+@keyframes fadeDown {
+    from {opacity:0; transform: translateY(-50px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+/* BUTTON */
+.btn {
+    text-decoration: none;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #ff4b2b, #ff416c);
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 15px #ff416c, 0 0 30px #ff4b2b;
+}
+
+/* Ripple */
+.btn::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+}
+.btn:hover::after {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 60px 20px;
+    background: #020617;
+    flex-wrap: wrap;
+}
+
+/* CARDS */
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 12px;
+    width: 260px;
+    transition: 0.4s;
+    animation: fadeUp 1.2s ease;
+}
+
+@keyframes fadeUp {
+    from {opacity:0; transform: translateY(40px);}
+    to {opacity:1; transform: translateY(0);}
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.05);
+    box-shadow: 0 0 20px rgba(56,189,248,0.5);
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+/* ABOUT */
+.about {
+    padding: 60px 20px;
+    text-align: center;
+    animation: fadeUp 1.5s ease;
+}
+
+/* FOOTER */
+footer {
+    background: #020617;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+<h2>@Off_the_Roader-55</h2>
+<div>
+<a href="Homepage.html">Home</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+<h1>Welcome 👋</h1>
+<p>Explore amazing content and stay connected!</p>
+
+<a class="btn" href="https://www.youtube.com/channel/UCHjmg3ZX2u5TXcepT_nFl2A" target="_blank">
+Visit My Channel
+</a>
+</section>
+
+<!-- FEATURES -->
+<section class="features">
+<div class="card">
+<h3>🎮 Gaming</h3>
+<p>Watch awesome gameplay and tutorials.</p>
+</div>
+
+<div class="card">
+<h3>🔥 Latest Videos</h3>
+<p>Stay updated with new uploads.</p>
+</div>
+
+<div class="card">
+<h3>💡 Tips & Tricks</h3>
+<p>Learn cool hacks and improve skills.</p>
+</div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+<h2>About Me</h2>
+<p>I create gaming content and fun videos. Subscribe and join the journey!</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 | Created by @Off_the_Roader-55
+</footer>
+
+</body>
+</html>
